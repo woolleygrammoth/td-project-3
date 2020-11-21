@@ -1,0 +1,129 @@
+/* Base Styles */
+
+* {
+    font-family: "Arapey";
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fbfbfb;
+}
+
+header {
+    text-align: center;
+    background-color: #26263d;
+    color: #fbfbfb;
+    margin: 0;
+}
+
+h1 {
+    padding: 1em;
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.banner {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.reg-text {
+    color: #8d8d8c;
+}
+
+h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h2, legend {
+    color: #0f1d3c;
+}
+
+.banner > p {
+    margin: 0.5em 5px 0;
+    
+}
+
+legend, h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+body > hr {
+    padding: 1.5px;
+    border-top: 3px solid #26263d;
+    border-bottom: 1px solid #26263d;
+    border-right: none;
+    border-left: none;
+    margin: 2em 0.5em 1.5em;
+}
+
+legend {
+    margin-bottom: 0.5em;
+}
+
+label {
+    color: #8a8e8c;
+}
+
+.contact-info, 
+.newsletter {
+    border: none;
+}
+
+.contact-info > label, 
+.contact-info > input {
+    display: block;
+}
+
+.contact-info > label {
+    margin: 0.5em 0;
+}
+
+.contact-info > input, select {
+    border: none; 
+    width: 100%;
+    border-radius: 5px;
+    background-color: #ececec;
+    margin-bottom: 1em;
+    padding: 1em 0;
+}
+
+input::placeholder {
+    text-align: right;
+    font-style: italic;
+    padding-right: 1em;
+}
+
+textarea::placeholder {
+    text-align: center; 
+    font-size: 0.8em;
+}
+
+input:focus {
+    border: 1px solid #0c424c;
+}
+
+#zip_code {
+    width: 50%;
+}
+
+form > hr {
+    border: solid 2px #26263d;
+    margin: 0.5em 0.5em 1.5em;
+}
+
+/* .newsletter > input {
+    display: inline;
+}
+
+input + label {
+    display: inline;
+} */
+
