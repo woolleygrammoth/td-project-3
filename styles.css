@@ -33,7 +33,7 @@ h1 {
 }
 
 .reg-text {
-    color: #8d8d8c;
+    color: darkslategray;
 }
 
 h2 {
@@ -69,7 +69,11 @@ legend {
 }
 
 label {
-    color: #8a8e8c;
+    color: darkslategray;
+}
+
+.contact-info {
+    background-color: #f6d9fc;
 }
 
 .contact-info, 
@@ -77,16 +81,18 @@ label {
     border: none;
 }
 
-.contact-info > label, 
-.contact-info > input {
+.contact-info label, 
+.contact-info input {
     display: block;
 }
 
-.contact-info > label {
+.contact-info label {
     margin: 0.5em 0;
 }
 
-.contact-info > input, select {
+.contact-info input, 
+select, 
+textarea {
     border: none; 
     width: 100%;
     border-radius: 5px;
@@ -106,8 +112,16 @@ textarea::placeholder {
     font-size: 0.8em;
 }
 
-input:focus {
+input:focus, 
+textarea:focus {
+    background-color: #f1d9f7;
     border: 1px solid #0c424c;
+    transition: background-color 0.5s;
+}
+
+input, 
+textarea {
+    transition: background-color 0.5s;
 }
 
 #zip_code {
@@ -115,15 +129,81 @@ input:focus {
 }
 
 form > hr {
-    border: solid 2px #26263d;
+    border: solid 1px #26263d;
     margin: 0.5em 0.5em 1.5em;
 }
 
-/* .newsletter > input {
-    display: inline;
+input[type="radio"], 
+input[type="checkbox"] {
+    margin: 0 10px 1.5em 0.5em;
 }
 
-input + label {
-    display: inline;
-} */
+textarea {
+    height: 4em;
+    margin-bottom: 0;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: #2ebeaa;
+    color: #fbfbfb;
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 1em 0 1em;
+    width: 90%;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+p:last-child {
+    text-align: center;
+    margin-bottom: 3em;
+    color: darkslategray;
+}
+
+/* Media Query for Tablet & Desktop */
+
+@media (min-width: 768px) {
+
+    body {
+        margin: auto;
+    }
+
+    body > hr, 
+    .container {
+        width: 50%;
+        margin: auto;
+    }
+
+    .contact-info > legend {
+        padding-top: 2em;
+    }
+
+    .contact-info > div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-info > label {
+        width: 3em;
+    }
+
+    .contact-info input, 
+    select {
+        width: 70%;
+    }
+
+    #zip_code {
+        width: 25%;
+        margin-right: 45%;
+    }
+}
+
+button {
+    width: 95%;
+    padding: 0.5em 0 0.5em;
+    margin-top: 0.5em;
+}
 
