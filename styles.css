@@ -32,7 +32,8 @@ h1 {
     margin: auto;
 }
 
-.reg-text {
+.reg-text, 
+.text-area {
     color: darkslategray;
 }
 
@@ -141,6 +142,7 @@ input[type="checkbox"] {
 textarea {
     height: 4em;
     margin-bottom: 0;
+    margin-top: 1em;
 }
 
 button {
@@ -155,12 +157,6 @@ button {
     width: 90%;
     font-size: 1.5em;
     margin-top: 1em;
-}
-
-p:last-child {
-    text-align: center;
-    margin-bottom: 3em;
-    color: darkslategray;
 }
 
 /* Media Query for Tablet & Desktop */
