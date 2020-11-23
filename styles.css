@@ -94,7 +94,7 @@ label {
 .contact-info input, 
 select, 
 textarea {
-    border: none; 
+    border: 1px solid transparent; 
     width: 100%;
     border-radius: 5px;
     background-color: #ececec;
